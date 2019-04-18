@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		12F31A2D22690C6E003B7592 /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 12F31A2C22690C6E003B7592 /* video1.mp4 */; };
 		12F31A2F22690C76003B7592 /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 12F31A2E22690C76003B7592 /* video2.mp4 */; };
+		12F31A31226916F6003B7592 /* Mike.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 12F31A30226916F6003B7592 /* Mike.mp4 */; };
 		E83B46C32144053500D8F4B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83B46C22144053500D8F4B0 /* AppDelegate.swift */; };
 		E83B46C52144053500D8F4B0 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = E83B46C42144053500D8F4B0 /* art.scnassets */; };
 		E83B46C72144053500D8F4B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83B46C62144053500D8F4B0 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		12F31A2C22690C6E003B7592 /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video1.mp4; path = ../../../video1.mp4; sourceTree = "<group>"; };
 		12F31A2E22690C76003B7592 /* video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video2.mp4; path = ../../../video2.mp4; sourceTree = "<group>"; };
+		12F31A30226916F6003B7592 /* Mike.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mike.mp4; sourceTree = "<group>"; };
 		E83B46BF2144053500D8F4B0 /* ARHacking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARHacking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E83B46C22144053500D8F4B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E83B46C42144053500D8F4B0 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			children = (
 				12F31A2C22690C6E003B7592 /* video1.mp4 */,
 				12F31A2E22690C76003B7592 /* video2.mp4 */,
+				12F31A30226916F6003B7592 /* Mike.mp4 */,
 				E83B46C22144053500D8F4B0 /* AppDelegate.swift */,
 				E83B46C42144053500D8F4B0 /* art.scnassets */,
 				E83B46C62144053500D8F4B0 /* ViewController.swift */,
@@ -136,6 +139,7 @@
 				12F31A2F22690C76003B7592 /* video2.mp4 in Resources */,
 				E83B46CC2144053700D8F4B0 /* Assets.xcassets in Resources */,
 				12F31A2D22690C6E003B7592 /* video1.mp4 in Resources */,
+				12F31A31226916F6003B7592 /* Mike.mp4 in Resources */,
 				E83B46CA2144053500D8F4B0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

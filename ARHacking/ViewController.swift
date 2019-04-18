@@ -16,8 +16,10 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     static let jackVideo = Bundle.main.url(forResource: "video2", withExtension: "mp4")!
     static let ballantinesVideo = Bundle.main.url(forResource: "video1", withExtension: "mp4")!
+    static let mikeVideo = Bundle.main.url(forResource: "Mike", withExtension: "mp4")!
     let players = [ "maya" : AVPlayer(url: jackVideo),
-                    "image2" : AVPlayer(url: ballantinesVideo)]
+                    "image2" : AVPlayer(url: ballantinesVideo),
+                    "image4" : AVPlayer(url: mikeVideo)]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +44,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let referenceImages = ARReferenceImage.referenceImages(inGroupNamed: "Whiskies", bundle: Bundle.main)!
         let configuration = ARImageTrackingConfiguration()
         configuration.trackingImages = referenceImages
-        configuration.maximumNumberOfTrackedImages = 2
+        configuration.maximumNumberOfTrackedImages = 3
         sceneView.session.run(configuration)
     }
     
