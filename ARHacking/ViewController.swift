@@ -16,8 +16,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     static let jackVideo = Bundle.main.url(forResource: "video2", withExtension: "mp4")!
     static let ballantinesVideo = Bundle.main.url(forResource: "video1", withExtension: "mp4")!
-    let players = [ "jack" : AVPlayer(url: jackVideo),
-                    "ballantines" : AVPlayer(url: ballantinesVideo)]
+    let players = [ "maya" : AVPlayer(url: jackVideo),
+                    "image2" : AVPlayer(url: ballantinesVideo)]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,6 +84,14 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 }
             }
         }
+        //audio test
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: [])
+        }
+        catch {
+            print("Setting category to AVAudioSessionCategoryPlayback failed.")
+        }
+        //end audio test
     }
     
     deinit {

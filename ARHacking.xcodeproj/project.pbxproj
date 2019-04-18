@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12F31A2D22690C6E003B7592 /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 12F31A2C22690C6E003B7592 /* video1.mp4 */; };
+		12F31A2F22690C76003B7592 /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 12F31A2E22690C76003B7592 /* video2.mp4 */; };
 		E83B46C32144053500D8F4B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83B46C22144053500D8F4B0 /* AppDelegate.swift */; };
 		E83B46C52144053500D8F4B0 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = E83B46C42144053500D8F4B0 /* art.scnassets */; };
 		E83B46C72144053500D8F4B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83B46C62144053500D8F4B0 /* ViewController.swift */; };
 		E83B46CA2144053500D8F4B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E83B46C82144053500D8F4B0 /* Main.storyboard */; };
 		E83B46CC2144053700D8F4B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E83B46CB2144053700D8F4B0 /* Assets.xcassets */; };
 		E83B46CF2144053700D8F4B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E83B46CD2144053700D8F4B0 /* LaunchScreen.storyboard */; };
-		E83B46D721440A6A00D8F4B0 /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E83B46D621440A6A00D8F4B0 /* video1.mp4 */; };
-		E83B46D921441D5200D8F4B0 /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E83B46D821441D5200D8F4B0 /* video2.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12F31A2C22690C6E003B7592 /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video1.mp4; path = ../../../video1.mp4; sourceTree = "<group>"; };
+		12F31A2E22690C76003B7592 /* video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video2.mp4; path = ../../../video2.mp4; sourceTree = "<group>"; };
 		E83B46BF2144053500D8F4B0 /* ARHacking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARHacking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E83B46C22144053500D8F4B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E83B46C42144053500D8F4B0 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -26,8 +28,6 @@
 		E83B46CB2144053700D8F4B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E83B46CE2144053700D8F4B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E83B46D02144053700D8F4B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E83B46D621440A6A00D8F4B0 /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
-		E83B46D821441D5200D8F4B0 /* video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video2.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +60,9 @@
 		E83B46C12144053500D8F4B0 /* ARHacking */ = {
 			isa = PBXGroup;
 			children = (
+				12F31A2C22690C6E003B7592 /* video1.mp4 */,
+				12F31A2E22690C76003B7592 /* video2.mp4 */,
 				E83B46C22144053500D8F4B0 /* AppDelegate.swift */,
-				E83B46D621440A6A00D8F4B0 /* video1.mp4 */,
-				E83B46D821441D5200D8F4B0 /* video2.mp4 */,
 				E83B46C42144053500D8F4B0 /* art.scnassets */,
 				E83B46C62144053500D8F4B0 /* ViewController.swift */,
 				E83B46C82144053500D8F4B0 /* Main.storyboard */,
@@ -132,10 +132,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E83B46C52144053500D8F4B0 /* art.scnassets in Resources */,
-				E83B46D721440A6A00D8F4B0 /* video1.mp4 in Resources */,
-				E83B46D921441D5200D8F4B0 /* video2.mp4 in Resources */,
 				E83B46CF2144053700D8F4B0 /* LaunchScreen.storyboard in Resources */,
+				12F31A2F22690C76003B7592 /* video2.mp4 in Resources */,
 				E83B46CC2144053700D8F4B0 /* Assets.xcassets in Resources */,
+				12F31A2D22690C6E003B7592 /* video1.mp4 in Resources */,
 				E83B46CA2144053500D8F4B0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,13 +295,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UAM22JDBB2;
+				DEVELOPMENT_TEAM = 5HBUC72FDQ;
 				INFOPLIST_FILE = ARHacking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mitrevski.ARHacking;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taralaughlin.ARHacking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,13 +313,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UAM22JDBB2;
+				DEVELOPMENT_TEAM = 5HBUC72FDQ;
 				INFOPLIST_FILE = ARHacking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mitrevski.ARHacking;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taralaughlin.ARHacking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
