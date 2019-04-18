@@ -71,6 +71,12 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         return node
     }
     
+    @objc func playerItemDidReachEnd(notification: NSNotification) {
+        if let playerItem: AVPlayerItem = notification.object as? AVPlayerItem {
+            playerItem.seek(to: CMTime.zero)
+        }
+    }
+    
     func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
         guard let imageAnchor = anchor as? ARImageAnchor else {
             return
@@ -92,6 +98,13 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             print("Setting category to AVAudioSessionCategoryPlayback failed.")
         }
         //end audio test
+        let player = players[imageAnchor.name!]!
+        player.actionAtItemEnd = .none
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(ViewController.playerItemDidReachEnd),
+            name: NSNotification.Name.AVPlayerItemDidPlayToEndTime,
+            object: player.currentItem)
     }
     
     deinit {
