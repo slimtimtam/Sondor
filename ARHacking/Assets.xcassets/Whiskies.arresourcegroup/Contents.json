@@ -5,6 +5,9 @@
   },
   "resources" : [
     {
+      "filename" : "gogh.arreferenceimage"
+    },
+    {
       "filename" : "image2.arreferenceimage"
     },
     {
@@ -12,6 +15,12 @@
     },
     {
       "filename" : "maya.arreferenceimage"
+    },
+    {
+      "filename" : "monalisa.arreferenceimage"
+    },
+    {
+      "filename" : "queen.arreferenceimage"
     }
   ]
 }

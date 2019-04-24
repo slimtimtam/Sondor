@@ -14,12 +14,18 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
     
-    static let jackVideo = Bundle.main.url(forResource: "video2", withExtension: "mp4")!
+    static let jackVideo = Bundle.main.url(forResource: "maya", withExtension: "mp4")!
     static let ballantinesVideo = Bundle.main.url(forResource: "video1", withExtension: "mp4")!
     static let mikeVideo = Bundle.main.url(forResource: "Mike", withExtension: "mp4")!
+    static let goghVideo = Bundle.main.url(forResource: "gogh", withExtension: "mp4")!
+    static let queenVideo = Bundle.main.url(forResource: "queen", withExtension: "mp4")!
+    static let monaVideo = Bundle.main.url(forResource: "monalisa", withExtension: "mp4")!
     let players = [ "maya" : AVPlayer(url: jackVideo),
                     "image2" : AVPlayer(url: ballantinesVideo),
-                    "image4" : AVPlayer(url: mikeVideo)]
+                    "image4" : AVPlayer(url: mikeVideo),
+                    "gogh" : AVPlayer(url:goghVideo),
+                    "queen" : AVPlayer(url: queenVideo),
+                    "monalisa" : AVPlayer(url: monaVideo)]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,13 +44,14 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         super.viewWillDisappear(animated)
         // Pause the view's session
         sceneView.session.pause()
+        
     }
     
     func setupImageTrackingConfiguration() {
         let referenceImages = ARReferenceImage.referenceImages(inGroupNamed: "Whiskies", bundle: Bundle.main)!
         let configuration = ARImageTrackingConfiguration()
         configuration.trackingImages = referenceImages
-        configuration.maximumNumberOfTrackedImages = 3
+        configuration.maximumNumberOfTrackedImages = 4
         sceneView.session.run(configuration)
     }
     
@@ -65,7 +72,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             plane.firstMaterial?.diffuse.contents = player
             player.seek(to: CMTime.zero)
             player.play()
-            
+
             let planeNode = SCNNode(geometry: plane)
             planeNode.eulerAngles.x = -.pi / 2
             node.addChildNode(planeNode)
@@ -92,23 +99,23 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 }
             }
         }
-        //audio test
-        do {
-            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: [])
-        }
-        catch {
-            print("Setting category to AVAudioSessionCategoryPlayback failed.")
-        }
-        //end audio test
-        let player = players[imageAnchor.name!]!
-        player.actionAtItemEnd = .none
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(ViewController.playerItemDidReachEnd),
-            name: NSNotification.Name.AVPlayerItemDidPlayToEndTime,
-            object: player.currentItem)
+//        //audio test
+//        do {
+//            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .moviePlayback, options: [])
+//        }
+//        catch {
+//            print("Setting category to AVAudioSessionCategoryPlayback failed.")
+//        }
+//        //end audio test
+//        let player = players[imageAnchor.name!]!
+//        player.actionAtItemEnd = .none
+//        NotificationCenter.default.addObserver(
+//            self,
+//            selector: #selector(ViewController.playerItemDidReachEnd),
+//            name: NSNotification.Name.AVPlayerItemDidPlayToEndTime,
+//            object: player.currentItem)
     }
-    
+
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
