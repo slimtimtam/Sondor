@@ -89,6 +89,10 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         }
     }
     
+    @IBAction func taraLabel(_ sender: Any) {
+        print("hey")
+        self.viewWillAppear(true)
+    }
     func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
         guard let imageAnchor = anchor as? ARImageAnchor else {
             return
@@ -102,21 +106,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 //                }
 //            }
 //        }
-//        //audio test
-//        do {
-//            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .moviePlayback, options: [])
-//        }
-//        catch {
-//            print("Setting category to AVAudioSessionCategoryPlayback failed.")
-//        }
-//        //end audio test
-//        let player = players[imageAnchor.name!]!
-//        player.actionAtItemEnd = .none
-//        NotificationCenter.default.addObserver(
-//            self,
-//            selector: #selector(ViewController.playerItemDidReachEnd),
-//            name: NSNotification.Name.AVPlayerItemDidPlayToEndTime,
-//            object: player.currentItem)
     }
 
     deinit {
