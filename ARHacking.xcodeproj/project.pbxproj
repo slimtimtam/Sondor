@@ -14,6 +14,9 @@
 		12F4AF312270D95B007C2CBD /* queen.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 12F4AF302270D95B007C2CBD /* queen.mp4 */; };
 		12F4AF332270DF9E007C2CBD /* maya.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 12F4AF322270DF9E007C2CBD /* maya.mp4 */; };
 		12F4AF352270F607007C2CBD /* monalisa.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 12F4AF342270F607007C2CBD /* monalisa.mp4 */; };
+		12F4AF372277BDBE007C2CBD /* spanish.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 12F4AF362277BDBE007C2CBD /* spanish.mp4 */; };
+		12F4AF392277C081007C2CBD /* billyray.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 12F4AF382277C081007C2CBD /* billyray.mp4 */; };
+		12F4AF3D2277C8E5007C2CBD /* rockyHorror.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 12F4AF3C2277C8E5007C2CBD /* rockyHorror.mp4 */; };
 		E83B46C32144053500D8F4B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83B46C22144053500D8F4B0 /* AppDelegate.swift */; };
 		E83B46C52144053500D8F4B0 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = E83B46C42144053500D8F4B0 /* art.scnassets */; };
 		E83B46C72144053500D8F4B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83B46C62144053500D8F4B0 /* ViewController.swift */; };
@@ -30,6 +33,9 @@
 		12F4AF302270D95B007C2CBD /* queen.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = queen.mp4; sourceTree = "<group>"; };
 		12F4AF322270DF9E007C2CBD /* maya.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = maya.mp4; sourceTree = "<group>"; };
 		12F4AF342270F607007C2CBD /* monalisa.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = monalisa.mp4; sourceTree = "<group>"; };
+		12F4AF362277BDBE007C2CBD /* spanish.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = spanish.mp4; sourceTree = "<group>"; };
+		12F4AF382277C081007C2CBD /* billyray.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = billyray.mp4; sourceTree = "<group>"; };
+		12F4AF3C2277C8E5007C2CBD /* rockyHorror.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = rockyHorror.mp4; path = ../../../rockyHorror.mp4; sourceTree = "<group>"; };
 		E83B46BF2144053500D8F4B0 /* ARHacking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARHacking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E83B46C22144053500D8F4B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E83B46C42144053500D8F4B0 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -77,6 +83,9 @@
 				12F4AF342270F607007C2CBD /* monalisa.mp4 */,
 				12F31A30226916F6003B7592 /* Mike.mp4 */,
 				12F4AF302270D95B007C2CBD /* queen.mp4 */,
+				12F4AF362277BDBE007C2CBD /* spanish.mp4 */,
+				12F4AF3C2277C8E5007C2CBD /* rockyHorror.mp4 */,
+				12F4AF382277C081007C2CBD /* billyray.mp4 */,
 				E83B46C22144053500D8F4B0 /* AppDelegate.swift */,
 				E83B46C42144053500D8F4B0 /* art.scnassets */,
 				E83B46C62144053500D8F4B0 /* ViewController.swift */,
@@ -146,10 +155,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12F4AF3D2277C8E5007C2CBD /* rockyHorror.mp4 in Resources */,
 				E83B46C52144053500D8F4B0 /* art.scnassets in Resources */,
 				E83B46CF2144053700D8F4B0 /* LaunchScreen.storyboard in Resources */,
 				12F31A2F22690C76003B7592 /* video2.mp4 in Resources */,
+				12F4AF392277C081007C2CBD /* billyray.mp4 in Resources */,
 				12F4AF332270DF9E007C2CBD /* maya.mp4 in Resources */,
+				12F4AF372277BDBE007C2CBD /* spanish.mp4 in Resources */,
 				E83B46CC2144053700D8F4B0 /* Assets.xcassets in Resources */,
 				12EA07182270ADB0006BEA2B /* gogh.mp4 in Resources */,
 				12F4AF312270D95B007C2CBD /* queen.mp4 in Resources */,

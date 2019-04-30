@@ -15,17 +15,19 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet var sceneView: ARSCNView!
     
     static let jackVideo = Bundle.main.url(forResource: "maya", withExtension: "mp4")!
-    static let ballantinesVideo = Bundle.main.url(forResource: "video1", withExtension: "mp4")!
-    static let mikeVideo = Bundle.main.url(forResource: "Mike", withExtension: "mp4")!
     static let goghVideo = Bundle.main.url(forResource: "gogh", withExtension: "mp4")!
     static let queenVideo = Bundle.main.url(forResource: "queen", withExtension: "mp4")!
     static let monaVideo = Bundle.main.url(forResource: "monalisa", withExtension: "mp4")!
+    static let spanishVideo = Bundle.main.url(forResource: "spanish", withExtension: "mp4")!
+    static let billyVideo = Bundle.main.url(forResource: "billyray", withExtension: "mp4")!
+    static let lipsVideo = Bundle.main.url(forResource: "rockyHorror", withExtension: "mp4")!
     let players = [ "maya" : AVPlayer(url: jackVideo),
-                    "image2" : AVPlayer(url: ballantinesVideo),
-                    "image4" : AVPlayer(url: mikeVideo),
                     "gogh" : AVPlayer(url:goghVideo),
                     "queen" : AVPlayer(url: queenVideo),
-                    "monalisa" : AVPlayer(url: monaVideo)]
+                    "monalisa" : AVPlayer(url: monaVideo),
+                    "spanish" : AVPlayer(url: spanishVideo),
+                    "billy" : AVPlayer(url: billyVideo),
+                    "lips" : AVPlayer(url: lipsVideo)]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,7 +53,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let referenceImages = ARReferenceImage.referenceImages(inGroupNamed: "Whiskies", bundle: Bundle.main)!
         let configuration = ARImageTrackingConfiguration()
         configuration.trackingImages = referenceImages
-        configuration.maximumNumberOfTrackedImages = 4
+        configuration.maximumNumberOfTrackedImages = 8
         sceneView.session.run(configuration)
     }
     
@@ -80,6 +82,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         return node
     }
     
+    
     @objc func playerItemDidReachEnd(notification: NSNotification) {
         if let playerItem: AVPlayerItem = notification.object as? AVPlayerItem {
             playerItem.seek(to: CMTime.zero)
@@ -90,15 +93,15 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         guard let imageAnchor = anchor as? ARImageAnchor else {
             return
         }
-        if let pointOfView = sceneView.pointOfView {
-            let isVisible = sceneView.isNode(node, insideFrustumOf: pointOfView)
-            if isVisible {
-                let player = players[imageAnchor.name!]!
-                if player.rate == 0 {
-                    player.play()
-                }
-            }
-        }
+//        if let pointOfView = sceneView.pointOfView {
+//            let isVisible = sceneView.isNode(node, insideFrustumOf: pointOfView)
+//            if isVisible {
+//                let player = players[imageAnchor.name!]!
+//                if player.rate == 0 {
+//                    player.play()
+//                }
+//            }
+//        }
 //        //audio test
 //        do {
 //            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .moviePlayback, options: [])

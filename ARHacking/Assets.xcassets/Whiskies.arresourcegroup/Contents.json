@@ -5,13 +5,13 @@
   },
   "resources" : [
     {
+      "filename" : "billy.arreferenceimage"
+    },
+    {
       "filename" : "gogh.arreferenceimage"
     },
     {
-      "filename" : "image2.arreferenceimage"
-    },
-    {
-      "filename" : "image4.arreferenceimage"
+      "filename" : "lips.arreferenceimage"
     },
     {
       "filename" : "maya.arreferenceimage"
@@ -21,6 +21,9 @@
     },
     {
       "filename" : "queen.arreferenceimage"
+    },
+    {
+      "filename" : "spanish.arreferenceimage"
     }
   ]
 }
