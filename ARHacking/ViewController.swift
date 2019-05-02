@@ -15,7 +15,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet var sceneView: ARSCNView!
     
     static let jackVideo = Bundle.main.url(forResource: "maya", withExtension: "mp4")!
-    static let goghVideo = Bundle.main.url(forResource: "gogh", withExtension: "mp4")!
+    static let goghVideo = Bundle.main.url(forResource: "gogh1", withExtension: "mp4")!
     static let queenVideo = Bundle.main.url(forResource: "queen", withExtension: "mp4")!
     static let monaVideo = Bundle.main.url(forResource: "monalisa", withExtension: "mp4")!
     static let spanishVideo = Bundle.main.url(forResource: "spanish", withExtension: "mp4")!
@@ -53,7 +53,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let referenceImages = ARReferenceImage.referenceImages(inGroupNamed: "Whiskies", bundle: Bundle.main)!
         let configuration = ARImageTrackingConfiguration()
         configuration.trackingImages = referenceImages
-        configuration.maximumNumberOfTrackedImages = 8
+        configuration.maximumNumberOfTrackedImages = 9
         sceneView.session.run(configuration)
     }
     

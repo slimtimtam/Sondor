@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "maya.png"
+      "filename" : "IMG_7405.jpg"
     }
   ],
   "info" : {
@@ -10,7 +10,7 @@
     "author" : "xcode"
   },
   "properties" : {
-    "width" : 6,
+    "width" : 5,
     "unit" : "centimeters"
   }
 }

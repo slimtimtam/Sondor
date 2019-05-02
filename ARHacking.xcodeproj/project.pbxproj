@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12EA07182270ADB0006BEA2B /* gogh.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 12EA07172270ADB0006BEA2B /* gogh.mp4 */; };
+		12EA9230227A004800DB48F3 /* gogh1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 12EA922F227A004800DB48F3 /* gogh1.mp4 */; };
 		12F31A2D22690C6E003B7592 /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 12F31A2C22690C6E003B7592 /* video1.mp4 */; };
 		12F31A2F22690C76003B7592 /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 12F31A2E22690C76003B7592 /* video2.mp4 */; };
 		12F31A31226916F6003B7592 /* Mike.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 12F31A30226916F6003B7592 /* Mike.mp4 */; };
@@ -26,7 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		12EA07172270ADB0006BEA2B /* gogh.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = gogh.mp4; sourceTree = "<group>"; };
+		12EA922F227A004800DB48F3 /* gogh1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = gogh1.mp4; sourceTree = "<group>"; };
 		12F31A2C22690C6E003B7592 /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video1.mp4; path = ../../../video1.mp4; sourceTree = "<group>"; };
 		12F31A2E22690C76003B7592 /* video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video2.mp4; path = ../../../video2.mp4; sourceTree = "<group>"; };
 		12F31A30226916F6003B7592 /* Mike.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mike.mp4; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 				12F31A2C22690C6E003B7592 /* video1.mp4 */,
 				12F31A2E22690C76003B7592 /* video2.mp4 */,
 				12F4AF322270DF9E007C2CBD /* maya.mp4 */,
-				12EA07172270ADB0006BEA2B /* gogh.mp4 */,
+				12EA922F227A004800DB48F3 /* gogh1.mp4 */,
 				12F4AF342270F607007C2CBD /* monalisa.mp4 */,
 				12F31A30226916F6003B7592 /* Mike.mp4 */,
 				12F4AF302270D95B007C2CBD /* queen.mp4 */,
@@ -163,7 +163,7 @@
 				12F4AF332270DF9E007C2CBD /* maya.mp4 in Resources */,
 				12F4AF372277BDBE007C2CBD /* spanish.mp4 in Resources */,
 				E83B46CC2144053700D8F4B0 /* Assets.xcassets in Resources */,
-				12EA07182270ADB0006BEA2B /* gogh.mp4 in Resources */,
+				12EA9230227A004800DB48F3 /* gogh1.mp4 in Resources */,
 				12F4AF312270D95B007C2CBD /* queen.mp4 in Resources */,
 				12F31A2D22690C6E003B7592 /* video1.mp4 in Resources */,
 				12F31A31226916F6003B7592 /* Mike.mp4 in Resources */,
